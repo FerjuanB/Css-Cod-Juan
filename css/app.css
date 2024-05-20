@@ -5,7 +5,14 @@ html{
 *, *:before, *:after{
     box-sizing: inherit;
 }
+
+body{
+    font-family: "Raleway", sans-serif;
+}
 /* Globales */
+h1,h2,h3 {
+    font-family: "Playfair Display", serif;
+}
 a{
     text-decoration: none;
     color:#000;
@@ -17,6 +24,7 @@ a{
 }
 img{
     max-width: 100%;
+    display: block;
     /* de esta manera las imagenes se van adaptando al tamaño de su contenedor*/
 }
 .nombre-sitio{
@@ -50,6 +58,22 @@ img{
 }
 
 /*CATEGORÍAS*/
+.categorias h2{
+    text-align: center;
+    display: block;
+}
+.categoria a{
+    text-align: center;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+}
+.categoria a:hover{
+    background-color: #037bc0;
+    color: white;
+    border-radius:0 0 10px 0;
+
+}
 .listado-categorias{
  display: grid;
  grid-template-columns: repeat(3,1fr);
